@@ -13,7 +13,7 @@ class Noticias {
    }
 
    salvarNoticia = (noticia, callback) => {
-    // this._connection.query("INSERT INTO noticias SET ?", noticia, callback)
+    this._connection.query("INSERT INTO noticias SET ?", noticia, callback)
    }
    
 }

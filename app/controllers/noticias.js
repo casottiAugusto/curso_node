@@ -3,7 +3,7 @@ module.exports.noticia = function (app, req, res) {
   
   var noticiasModel = new app.app.models.noticiasModel(connection);
   noticiasModel.getNoticia(function (err, result) {
-    console.log(result)
+    
     res.render("noticias/noticia", { noticia: result });
   });
 };

@@ -1,4 +1,4 @@
-const {body, validationResult}= require('express-validator')
+
 module.exports = function (app) {
   app.get("/admin", function (req, res) {
     app.app.controllers.admin.formulario_inclusao_notivia(app, req, res);
